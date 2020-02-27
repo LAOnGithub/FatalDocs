@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Datatypes - Fatality.win</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Datatypes";
+    var mkdocs_page_input_path = "datatypes\\datatypes.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/lua.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Fatality.win</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Datatypes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fatality</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">callbacks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../callbacks/Callbacks/">Callbacks</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../callbacks/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">render</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../render/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../render/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">input</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../input/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../input/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">math</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../math/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../math/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">config</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../config/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../config/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">menu</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../menu/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../menu/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">csgo</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">engine_client</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/engine_client/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/engine_client/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">events</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/events/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/events/Example/">Example</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/events/Events/">Events</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">global_vars</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/global_vars/Variables/">Variables</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/global_vars/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">debug_overlay</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/debug_overlay/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/debug_overlay/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">entity_list</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/entity_list/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/entity_list/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">cvar</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/cvar/Functions/">Functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../interface_handler/cvar/Example/">Example</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Fatality.win</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Datatypes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="lag_record_t">lag_record_t</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sim_time : int</td>
+<td>The players' time on the server</td>
+</tr>
+<tr>
+<td>matrix : matrix3x4_t</td>
+<td>The players' bone matrix</td>
+</tr>
+<tr>
+<td>dormant : boolean</td>
+<td>Wether the player is networked on the record</td>
+</tr>
+<tr>
+<td>origin : vector3</td>
+<td>The position of the player</td>
+</tr>
+<tr>
+<td>velocity : vector3</td>
+<td>The players' velocity</td>
+</tr>
+<tr>
+<td>eye_angles : angle</td>
+<td>The players' resolved eye angles</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="record_shot_info_t">record_shot_info_t</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>has_info : boolean</td>
+<td>Shows if the values have been initialized</td>
+</tr>
+<tr>
+<td>extrapolated : boolean</td>
+<td>Shows if the player was being extrapolated on hit</td>
+</tr>
+<tr>
+<td>breaking_lc : boolean</td>
+<td>Shows if the player was breaking lagcomp</td>
+</tr>
+<tr>
+<td>delayed_shot : boolean</td>
+<td>Shows wether the shot was delayed</td>
+</tr>
+<tr>
+<td>backtrack_ticks : int</td>
+<td>The amount of ticks the player was backtracked</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="shot_t">shot_t</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>victim : int</td>
+<td>The victim's index</td>
+</tr>
+<tr>
+<td>target_hitgroup : int</td>
+<td>The targeted hitgroup</td>
+</tr>
+<tr>
+<td>hit : boolean</td>
+<td>Shows wether the bullet hit the victim</td>
+</tr>
+<tr>
+<td>shotpos : csgo.vector3</td>
+<td>The shooting position</td>
+</tr>
+<tr>
+<td>target_hitpos : csgo.vector3</td>
+<td>The targeted hit position</td>
+</tr>
+<tr>
+<td>target_damage : int</td>
+<td>The amount of damage given</td>
+</tr>
+<tr>
+<td>shot_info : record_shot_info_t</td>
+<td>Additional information about the shot</td>
+</tr>
+<tr>
+<td>inaccuracy : float</td>
+<td>The inaccuracy</td>
+</tr>
+<tr>
+<td>hitchance : float</td>
+<td>The hitchance</td>
+</tr>
+<tr>
+<td>hurt : boolean</td>
+<td>Shows wether the player was hurt or not</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="value">value</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_int( ) : int</td>
+<td>Returns the int of the value</td>
+</tr>
+<tr>
+<td>get_bool( ) : boolean</td>
+<td>Returns the boolean of the value</td>
+</tr>
+<tr>
+<td>get_float( ) : float</td>
+<td>Returns the float of the value</td>
+</tr>
+<tr>
+<td>get_color( ) : csgo.color</td>
+<td>Returns the color of the value</td>
+</tr>
+<tr>
+<td>set_int( value : int ) : int</td>
+<td>Sets the int of the value</td>
+</tr>
+<tr>
+<td>set_bool( value : bool ) : boolean</td>
+<td>Sets the boolean of the value</td>
+</tr>
+<tr>
+<td>set_float( value : float ) : float</td>
+<td>Sets the float of the value</td>
+</tr>
+<tr>
+<td>set_color( value : color ) : csgo.color</td>
+<td>Sets the color of the value</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="color">color</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constructor( r : int, g : int, b : int, a : int )</td>
+<td>Creates and returns a color value</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="game_event">game_event</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_name( ) : string</td>
+<td>Returns the name of the event</td>
+</tr>
+<tr>
+<td>get_bool( aspect : string ) : boolean</td>
+<td>Returns the boolean of the specified aspect</td>
+</tr>
+<tr>
+<td>get_int( aspect : string ) : int</td>
+<td>Returns the int of the specified aspect</td>
+</tr>
+<tr>
+<td>get_float( aspect : string ) : boolean</td>
+<td>Returns the float of the specified aspect</td>
+</tr>
+<tr>
+<td>get_string( aspect : string ) : int</td>
+<td>Returns the string of the specified aspect</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="vector3">vector3</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constructor( x : float, y : float, z : float )</td>
+<td>Creates and returns a vector3 value</td>
+</tr>
+<tr>
+<td>x : float</td>
+<td>The x value</td>
+</tr>
+<tr>
+<td>y : float</td>
+<td>The y value</td>
+</tr>
+<tr>
+<td>z : float</td>
+<td>The z value</td>
+</tr>
+<tr>
+<td>to_screen( ) : vector2</td>
+<td>Converts the vector3 into a vector2 with the screen position</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="angle">angle</h3>
+<p>derives from vector3</p>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constructor( x : float, y : float, z : float )</td>
+<td>Creates and returns a angle value</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="convar">convar</h3>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_int( ) : int</td>
+<td>Returns the int value of the convar</td>
+</tr>
+<tr>
+<td>get_float( ) : float</td>
+<td>Returns the float value of the convar</td>
+</tr>
+<tr>
+<td>unlock( ) : void</td>
+<td>Unlock the convar so it can be changed (WARNING! THIS CAN BAN YOU FROM SECURE SERVERS)</td>
+</tr>
+<tr>
+<td>set_int( value : int ) : void</td>
+<td>Sets the int of the convar</td>
+</tr>
+<tr>
+<td>set_string( value : string ) : void</td>
+<td>Sets the string of the convar</td>
+</tr>
+<tr>
+<td>set_float( value : float ) : void</td>
+<td>Sets the float of the convar</td>
+</tr>
+<tr>
+<td>set_color( value : color ) : void</td>
+<td>Sets the color of the convar</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="entity">entity</h3>
+<p><a href="https://fatality.win/attachments/netvar_dump-txt.254/">netvar dump</a></p>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_var_bool( netvar : string ) : boolean</td>
+<td>Returns the boolean value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_int( netvar : string ) : int</td>
+<td>Returns the int value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_float( netvar : string ) : float</td>
+<td>Returns the float value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_short( netvar : string ) : short</td>
+<td>Returns the short value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_handle( netvar : string ) : handle</td>
+<td>Returns the handle value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_angle( netvar : string ) : csgo.angle</td>
+<td>Returns the angle value of the netvar</td>
+</tr>
+<tr>
+<td>get_var_vector( netvar : string ) : csgo.vector3</td>
+<td>Returns the vector value of the netvar</td>
+</tr>
+<tr>
+<td>is_player( ) : boolean</td>
+<td>Shows wether the entity is a player or not</td>
+</tr>
+<tr>
+<td>is_dormant( ) : boolean</td>
+<td>Shows wether the entity is being networked (false=networked)</td>
+</tr>
+<tr>
+<td>get_index( ) : int</td>
+<td>Returns the index for the entity</td>
+</tr>
+<tr>
+<td>get_class_id( ) : int</td>
+<td>Returns the class id of the entity</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="player">player</h3>
+<p>derives from entity</p>
+<table>
+<thead>
+<tr>
+<th>member</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_name( ) : string</td>
+<td>Returns the player name</td>
+</tr>
+<tr>
+<td>get_eye_pos( ) : csgo.vector3</td>
+<td>Returns the player's eye position</td>
+</tr>
+<tr>
+<td>is_alive( ) : boolean</td>
+<td>Shows wether the player is alive or not</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../callbacks/Callbacks/" class="btn btn-neutral float-right" title="Callbacks">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../callbacks/Callbacks/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
